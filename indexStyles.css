@@ -1,0 +1,111 @@
+/*I used Figma to get all the CSS rgb colour values which came in very handy, and I make use of border-radius: 20px extensively,
+because I find it to be quite reliable. I am also aware that the "Lifetime students" column in the courses tab isn't aligned consistently,
+but after trying to change the margin and padding for the surrounding elements,  trying out different ways to center the element, I could 
+not come up with a solution. I also found myself using flex display quite a bit, but I think that is due to the nature of my design being
+horizontally oriented.*/
+
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+body{
+    font-family: 'Karla';
+    margin: 0px;
+}
+
+header{
+    background-color: rgba(48, 203, 54, 1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#siteHeader{
+    color: white;
+    font-size: 5vh;
+    font-weight: bold;
+    margin: 2vw;
+}
+
+.buttonContainer{
+    display: flex;
+}
+
+.buttons{
+    background-color: rgba(37, 102, 31, 1);
+    color: white;
+    border-radius: 20px;
+    font-size: 2.5vh;
+    border-style: hidden;
+    order: 1;
+    margin: 0.5vw;
+    padding: 1vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+nav{
+    display: flex;
+    background-color: rgba(37, 102, 31, 1);
+}
+
+.navElements{
+    color: white;
+    margin-left: 1vw;
+}
+
+#categoryHeader{
+    color: rgba(48, 203, 54, 1);
+    margin-left: 1vw;
+}
+
+section{
+    border-radius: 20px;
+    border-color: rgba(37, 102, 31, 1);
+    border-style: solid;
+    margin: 1vh;
+}
+
+.courseHeader{
+    background-color: rgba(37, 102, 31, 1);
+    color: white;
+    padding-left: 1vw;
+    margin-top: 0px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    padding-top: 0.7vh;
+    padding-bottom: 0.7vh;
+}
+
+.courseDesc{
+    color: rgba(90, 84, 84, 1);
+    padding-left: 1vw;
+}
+
+.courseInfo{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    color: rgba(90, 84, 84, 1);
+    align-items: center;
+}
+
+.lessons{
+    padding-left: 1vw;
+}
+
+.difficulty{
+    padding-right: 1vw;
+}
+
+.students{
+    text-align: center;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(61, 67, 60, 1);
+    color: white;
+    padding-left: 3vw;
+    padding-right: 10vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}

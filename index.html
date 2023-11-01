@@ -1,0 +1,95 @@
+<!--I decided to go for a div for the button container because although it is not the most semantic HTML element,
+it is quite multi purpose. Also, I tried a nav element for it and the buttons lost their borders and became blocked together, so I went for
+traditional div. I have similar reasoning for the course information div, and although I find the section element a good substitute, I 
+haven't used it enough or seen it used enough to confidently layer section elements. Also worth mentioning, I used Font Awesome Icons in my
+project, as per the script tag below.-->
+
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>//training.com</title>
+        <link href="indexStyles.css" rel="stylesheet" type="text/css">
+        <script src="https://kit.fontawesome.com/c8fbb85b2d.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <header>
+            <h1 id="siteHeader">//training.com</h1>
+            <div class="buttonContainer">
+                <button class="buttons" id="registerButton">//register</button>
+                <button class="buttons" id="loginButton">//log in</button>
+            </div>
+        </header>
+
+        <nav>
+            <p class="navElements">//home</p>
+            <p class="navElements">//courses</p>
+            <p class="navElements">//news</p>
+        </nav>
+
+        <h1 id="categoryHeader">//all time favourites</h1>
+
+        <section>
+            <h3 class="courseHeader">//computer science fundamentals</h3>
+            <p class="courseDesc">Learn about the fundamentals of computer science through this interactive course.</p>
+            <div class="courseInfo">
+                <p class="lessons"><i class="fa-solid fa-book fa-xl" style="color: #000000;"></i> Lessons: 30</p>
+                <p class="students"><i class="fa-solid fa-graduation-cap fa-xl" style="color: #000000;"></i> Lifetime students: 36,132</p>
+                <p class="difficulty"><i class="fa-solid fa-award fa-xl" style="color: #000000;"></i> Difficulty: Beginner</p>
+            </div>
+        </section>
+        <section>
+            <h3 class="courseHeader">//algorithms and data structures</h3>
+            <p class="courseDesc">Learn about algorithms, data structures, and other topics that will advance your Computer Science knowledge, as well
+                as test your critical thinking skills.
+            </p>
+            <div class="courseInfo">
+                <p class="lessons"><i class="fa-solid fa-book fa-xl" style="color: #000000;"></i> Lessons: 54</p>
+                <p class="students"><i class="fa-solid fa-graduation-cap fa-xl" style="color: #000000;"></i> Lifetime students: 30,032</p>
+                <p class="difficulty"><i class="fa-solid fa-award fa-xl" style="color: #000000;"></i> Difficulty: Intermediate</p>
+            </div>
+        </section>
+        <section>
+            <h3 class="courseHeader">//programming with Python</h3>
+            <p class="courseDesc">Learn the basics of programming with Python, Python syntax, and what this widely popular programming language is
+                used for in the technology business world.
+            </p>
+            <div class="courseInfo">
+                <p class="lessons"><i class="fa-solid fa-book fa-xl" style="color: #000000;"></i> Lessons: 45</p>
+                <p class="students"><i class="fa-solid fa-graduation-cap fa-xl" style="color: #000000;"></i> Lifetime students: 28,754</p>
+                <p class="difficulty"><i class="fa-solid fa-award fa-xl" style="color: #000000;"></i> Difficulty: Beginner</p>
+            </div>
+        </section>
+        <section>
+            <h3 class="courseHeader">//programming with Javascript</h3>
+            <p class="courseDesc">Learn the basics of programming with Javascript, Javascript syntax, and how this widely adopted programming language is 
+                used throughout the web we interact with every day.
+            </p>
+            <div class="courseInfo">
+                <p class="lessons"><i class="fa-solid fa-book fa-xl" style="color: #000000;"></i> Lessons: 42</p>
+                <p class="students"><i class="fa-solid fa-graduation-cap fa-xl" style="color: #000000;"></i> Lifetime students: 25,100</p>
+                <p class="difficulty"><i class="fa-solid fa-award fa-xl" style="color: #000000;"></i> Difficulty: Beginner</p>
+            </div>
+        </section>
+        <section>
+            <h3 class="courseHeader">//database interaction with Python</h3>
+            <p class="courseDesc">Learn the processes of how to interact with popular relational databases such as PostgreSQL and MySQL, as well as non-relational
+                ones such as DynamoDB using Python.
+            </p>
+            <div class="courseInfo">
+                <p class="lessons"><i class="fa-solid fa-book fa-xl" style="color: #000000;"></i> Lessons: 60</p>
+                <p class="students"><i class="fa-solid fa-graduation-cap fa-xl" style="color: #000000;"></i> Lifetime students: 23,453</p>
+                <p class="difficulty"><i class="fa-solid fa-award fa-xl" style="color: #000000;"></i> Difficulty: Advanced</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>//help</p>
+            <p>//contact us</p>
+            <p>//privacy policy</p>
+            <p>© //training.com</p>
+        </footer>
+    </body>
+</html>
